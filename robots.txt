@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /
+
+User-agent: GoogleBot
+Disallow: /
+
+User-agent: Yandex
+Disallow: /
+
+Sitemap: http://ampare.ru/sitemap.xml
+Host: ampare.ru

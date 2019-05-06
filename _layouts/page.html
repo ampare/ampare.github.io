@@ -1,0 +1,34 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+
+  {% include head.html %}
+
+  <body>
+
+  	{% include nav.html %}
+
+  	<section class="page-content bg-light text-center">
+  	  <div class="container">
+
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">{{ page.title | escape }}</h1>
+
+    {% include breadcrumbs.html %} 
+
+	<div class="text-justify">
+		
+	  {{ content }}
+
+	</div>
+
+  	  </div>
+  	  <!-- /.container -->
+	</section>
+
+  	{% include footer.html %}
+
+  </body>
+</html>

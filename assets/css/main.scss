@@ -1,0 +1,20 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Core variables and mixins
+@import "variables.scss";
+@import "mixins.scss";
+// Global CSS
+@import "global.scss";
+// Components
+@import "masthead.scss";
+@import "showcase.scss";
+@import "icons.scss";
+@import "testimonials.scss";
+@import "call-to-action.scss";
+@import "footer.scss";
+@import "page-content.scss";
+@import "search.scss";
+@import "archive.scss";
