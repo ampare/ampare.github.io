@@ -12,7 +12,7 @@ summary: ""
         <div class="col-xl-7 mx-auto text-left">
           <h1 class="display-4">Юридические услуги в Ульяновске</h1>
           <p class="mb-5 lead">Проанализируем ситуацию, разработаем стратегию защиты, подготовим и направим претензию, составим исковое заявление, поможем с проведением необходимых экспертиз и сбором доказательств.</p>
-          <a href="#services" class="btn btn-lg btn-outline-light js-scroll-trigger" >Наши услуги</a>
+          <a href="#services" class="btn btn-lg btn-outline-light js-scroll-trigger px-5" >Наши услуги</a>
         </div>
         <div class="col-xl-5 mx-auto">
 
@@ -135,7 +135,7 @@ summary: ""
   	<div class="container">
 	  <h2 class="mb-5">Правовые новости и полезные материалы</h2>
 	    <div class="row">
-	      {% for post in site.posts limit: 6 %}
+	      {% for post in site.posts limit: 3 %}
 	      	<div class="col-lg-4 col-sm-6 text-left position-relative mb-5">
 	      	  <div class="card h-100">
 	      	  	<img class="card-img-top" src="/assets/images/{{ post.bg }}" alt="">
@@ -144,7 +144,7 @@ summary: ""
 	      	  	  <p class="card-text">{{ post.summary }}</p>
 	      	  	</div>
 	      	  	<div class="card-footer">
-	      	  	  <a class="btn btn-block btn-primary stretched-link" href="{{ post.url | relative_url }}">Читать</a>
+	      	  	  <a class="btn btn-block btn-primary stretched-link" href="{{ post.url | relative_url }}">Подробнее</a>
 	      	  	</div>
 	      	  </div>
 	      	</div>
@@ -202,14 +202,14 @@ summary: ""
   </section>
 
   <!-- Call to Action -->
-  <section class="showcase call-to-action text-white p-0" id="contact">
+  <section class="showcase call-to-action text-white p-0">
     <div class="container-fluid p-0">
       <div class="overlay"></div>
       <div class="row no-gutters">
         <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/images/lawyer-2.jpg');"></div>
-        <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+        <div class="col-lg-6 order-lg-1 my-auto showcase-text" id="contact">
           <h2 class="mb-4">Ваши права нарушены? Позвоните нам!</h2>
-          <table class="lead table table-borderless text-white">
+          <table class="contact-table lead table table-borderless text-white">
             <tr>
               <td class="text-right"><i class="icon-call-in m-auto text-warning"></i></td>
               <td><a  class="text-white phone" href="tel:79603660010">+7 960 360-00-10</a></td>
@@ -227,10 +227,10 @@ summary: ""
               <td><address>Западный бульвар, 27 офис 206<br>Ульяновск 432008</address></td>
             </tr>
             <tr>
-              <td colspan="2"><a  class="btn btn-lg btn-warning" href="#">Заказать звонок</a></td>
+              <td colspan="2" class="text-center"><a  class="btn btn-warning btn-block" href="#">Заказать звонок</a></td>
             </tr>
             <tr>
-              <td colspan="2"><a  class="btn btn-lg btn-outline-warning" href="#">Написать сообщение</a></td>
+              <td colspan="2" class="text-center"><a  class="btn btn-outline-warning btn-block" href="#">Написать сообщение</a></td>
             </tr>
           </table>
         </div>

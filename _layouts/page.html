@@ -8,25 +8,24 @@ layout: compress
 
   <body>
 
-  	{% include nav.html %}
+    {% include nav.html %}
 
-  	<section class="page-content bg-light text-center">
+  	<section class="page-content">
   	  <div class="container">
+        <div class="row mb-3">
+          <div class="col-lg-8 mx-auto">
+            <!-- Page Heading/Breadcrumbs -->
+            <h1 class="mt-4 mb-3 text-center">{{ page.title | escape }}</h1>
 
-      <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">{{ page.title | escape }}</h1>
+            {% include breadcrumbs.html %}
 
-    {% include breadcrumbs.html %} 
+            {{ content }}
 
-	<div class="text-justify">
-		
-	  {{ content }}
-
-	</div>
-
+           </div>
+         </div>
   	  </div>
   	  <!-- /.container -->
-	</section>
+    </section>
 
   	{% include footer.html %}
 

@@ -10,11 +10,48 @@ layout: compress
 
   	{% include nav.html %}
 
-  	<section class="page-content bg-light text-center">
-  	  <div class="container">
+    <!-- Masthead -->
+    <header style="background: url('/assets/images/{{ page.bg }}') no-repeat center center; background-size: cover;" class="masthead-post text-white text-center">
+      <div class="overlay"></div>
+      <div class="container">
+          <div class="col-xl-10 mx-auto">
+            <h1 class="display-4 text-uppercase">{{ page.title | escape }}</h1>
+            <p class="mb-5 lead">{{ page.summary }}</p>
+            <a href="#page-content" class="btn btn-lg btn-outline-light js-scroll-trigger" >Подробнее</a>
+          </div>
+      </div>
+    </header>
+
+    <section id="page-content" class="mt-5">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col-lg-8 mx-auto">
+
+            <!-- Page Heading/Breadcrumbs -->
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/">Главная</a></li>
+              <li class="breadcrumb-item"><a href="/blog">Блог</a></li>
+              <li class="breadcrumb-item active">{{ page.crawlertitle }}</li>
+            </ol>
+
+            <hr>
+            <!-- Date/Time -->
+            <p class="text-center">{{ page.date | date: "%d.%m.%Y" }}</p>
+            <hr>
+
+            {{ content }}
+
+           </div>
+         </div>
+      </div>
+      <!-- /.container -->
+    </section>
+
+  	<!-- <section class="page-content bg-light text-center">
+  	  <div class="container"> -->
 
       <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">{{ page.title | escape }}</h1>
+     <!--  <h1 class="mt-4 mb-3">{{ page.title | escape }}</h1>
 
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/">Главная</a></li>
@@ -22,46 +59,46 @@ layout: compress
         <li class="breadcrumb-item active">{{ page.crawlertitle }}</li>
       </ol>
 
-	  <div class="row">
+	  <div class="row"> -->
 
       <!-- Post Content Column -->
-      <div class="col-lg-8 text-justify">
+      <!-- <div class="col-lg-8 text-justify"> -->
 
         <!-- Preview Image -->
-        <img class="blog-img rounded" width="900" height="300" src="/assets/images/{{ page.bg }}" alt="">
+        <!-- <img class="blog-img rounded" width="900" height="300" src="/assets/images/{{ page.bg }}" alt="">
 
-        <hr>
+        <hr> -->
 
         <!-- Date/Time -->
-        <p class="text-center">{{ page.date }}</p>
+       <!--  <p class="text-center">{{ page.date }}</p>
 
-        <hr>
+        <hr> -->
 
         <!-- Post Content -->
-		
-	      {{ content }}
-    
+
+	      <!-- {{ content }}
+
 	      <hr>
-      </div>
+      </div> -->
 
         <!-- Sidebar Widgets Column -->
-      <div class="col-md-4">
+     <!--  <div class="col-md-4"> -->
 
         <!-- Side Widget -->
-        <div class="card my-4">
+        <!-- <div class="card my-4">
           <h5 class="card-header">О чем</h5>
           <div class="card-body">{{ page.summary }}</div>
         </div>
 
       </div>
 
-    </div>
+    </div> -->
     <!-- /.row -->
 
-  </div>
-  <!-- /.container --> 
+  <!-- </div> -->
+  <!-- /.container -->
 
-	</section>
+	<!-- </section> -->
 
   	{% include footer.html %}
 
