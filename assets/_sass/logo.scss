@@ -1,0 +1,36 @@
+.logo {
+    position: relative;
+    transition: all 0.6s;
+    &:before {
+        content: "";
+        width: 0;
+        height: 1px;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        background: #dd5e28;
+        transition: all 0.3s;
+    }
+    &:after {
+        content: "";
+        width: 0;
+        height: 1px;
+        position: absolute;
+        top: -1px;
+        left: 50%;
+        background: #dd5e28;
+        transition: all 0.3s;
+    }
+    &:hover {
+        &:before,
+        &:after {
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+
+.logo__inner {
+  color: #dd5e28;
+  text-align: center;
+}
