@@ -1,1 +1,0 @@
-# ampare.github.io
